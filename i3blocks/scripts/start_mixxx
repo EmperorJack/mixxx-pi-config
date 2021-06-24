@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! pgrep -x "mixxx" > /dev/null
+then
+    i3-msg exec "/usr/bin/mixxx"
+fi
