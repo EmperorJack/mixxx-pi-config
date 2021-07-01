@@ -1,6 +1,6 @@
 # mixxx-pi-config
 
-This project documents the steps I took and configuration files I used to create a standalone Mixxx DJ setup using a Raspberry Pi. It is inspired by the standalone DDJ400 project completed by TimewasterNL, and the instructions provided by Fayaaz. The supplied configuration files customise the menu bar (i3bar) shown at the bottom of the screen, providing buttons to open Mixxx and turn off the system without needing a keyboard.
+This project documents the steps I took and configuration files I used to create a standalone Mixxx DJ setup using a Raspberry Pi. It is inspired by the standalone DDJ400 project completed by TimewasterNL, and the instructions & files provided by Fayaaz. The supplied configuration files extend Fayaaz's configuration to customise the menu bar (i3bar) shown at the bottom of the screen, providing buttons to open Mixxx and turn off the system without needing a keyboard. It also makes use of unclutter to hide the mouse pointer.
 
 [images to go here]
 
@@ -26,7 +26,8 @@ This project documents the steps I took and configuration files I used to create
 ## Connecting to the pi
 
 - Plug the pi into the power supply, Mixxx should start automatically
-- Either plug in a USB keyboard, or connect the pi to the internet via ethernet and ssh to it (user: `pi`, password: `mixxx`)
+- To interact with the pi, either plug in a USB keyboard, or connect it to the internet and use ssh to control it from another computer (user: `pi`, password: `mixxx`)
+- To connect the pi to the internet either use an ethernet connection or use `raspi-config` to configure a wifi connection
 
 ## Package installation
 
@@ -35,6 +36,7 @@ This project documents the steps I took and configuration files I used to create
 - vim
 - i3blocks
 - FontAwesome
+- unclutter
 
 ## Locale configuration
 
