@@ -178,3 +178,7 @@ popup_during_fullscreen leave_fullscreen
 exec devmon & /usr/bin/mixxx
 
 for_window [class="Mixxx" instance="mixxx"] fullscreen enable
+
+# Start unclutter to hide mouse cursor automatically
+exec "unclutter -idle 2"
+
