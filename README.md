@@ -29,12 +29,12 @@ This project documents the steps I took and configuration files I used to create
 
 ## Package installation
 
-*First, update & upgrade the pi*
+_First, update & upgrade the pi_
 
 - `sudo apt update`
 - `sudo apt upgrade`
 
-*Next, you'll want to `apt-get` the following packages:*
+_Next, you'll want to `apt-get` the following packages:_
 
 - `vim` (or your preferred editor)
 - `i3blocks`
@@ -43,10 +43,11 @@ This project documents the steps I took and configuration files I used to create
 
 ## Locale configuration
 
-*These steps are easiest using `raspi-config` with a keyboard on the pi*
+_These steps are easiest using `raspi-config` with a keyboard on the pi_
 
 - Set keyboard locale to English (US) (or your preferred language)
 - Set timezone to Pacific/Auckland (or your preferred timezone)
+- Set the correct date and time in the command line (e.g: `sudo date -s '2022-12-03 15:15:00'`)
 
 ## i3 configuration
 
@@ -57,7 +58,7 @@ This project documents the steps I took and configuration files I used to create
 
 ## Mixxx configuration
 
-*The following configuration takes places in the Mixxx preferences window, and in some mixxx config files*
+_The following configuration takes places in the Mixxx preferences window, and in some mixxx config files._
 
 ### Sound Hardware
 
@@ -71,19 +72,19 @@ This project documents the steps I took and configuration files I used to create
 
 ### Controllers
 
-- Make sure to copy any custom controller mapping files to the mixxx controllers folder. You must restart mixxx for the mappings to appear
+- Make sure to copy any custom controller mapping files to the mixxx user controllers folder (e.g: `~/.mixxx/controllers`). You must restart mixxx for the mappings to appear
 - Configure MIDI device in controllers preferences
 
 ### Interface
 
-- Modify LateNight skin `MinimumSize` to match your display (e.g: `800,450` for the Raspberry Pi 7" Touch Display). You can find the config file in the mixxx skins folder e.g: `mixxx/skins/LateNight/skin.xml`. You must restart mixxx for these changes to take effect
+- Modify LateNight skin `MinimumSize` to match your display (e.g: `800,450` for the Raspberry Pi 7" Touch Display). You can find the config file in the mixxx skins folder e.g: `/usr/share/mixxx/skins/LateNight/skin.xml`. Before doing this, it's best to copy and rename the skin folder into the mixxx user skins folder (e.g: `~/.mixxx/skins/LateNightCustom`). You must restart mixxx for these changes to take effect
 - Open skin settings, uncheck mixer section, set deck size to compact
 - Set locale to system in interface preferences
 - Enable start in full-screen mode
 
 ### Waveforms
 
-- Set waveform type to HSV, frame rate to 45, default zoom level to 14.3%
+- Set waveform type to RGB, frame rate to 45, default zoom level to 14.3%
 
 ## Acknowledgements
 
