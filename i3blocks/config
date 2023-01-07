@@ -6,6 +6,11 @@ full_text=MIXXX
 color=#FFFF00
 command=~/.config/i3blocks/scripts/start_mixxx | echo MIXXX
 
+[reset_mixxx_cfg]
+full_text=RESET CONFIG
+color=#FFA500
+command=~/.config/i3blocks/scripts/reset_mixxx_cfg | echo RESET CONFIG
+
 [cpu-label]
 full_text=CPU:
 color=#FFFFFF
@@ -55,6 +60,6 @@ color=#222222
 command=i3-msg restart
 
 [shutdown]
-full_text=  
+full_text=
 color=#880000
 command=~/.config/i3blocks/scripts/shutdown | echo '  '

@@ -86,6 +86,12 @@ _The following configuration takes places in the Mixxx preferences window, and i
 
 - Set waveform type to RGB, frame rate to 45, default zoom level to 14.3%
 
+### The mixxx.cfg file
+
+- The latest state of the mixxx software (including preferences & skin settings) is stored in the `mixxx.cfg` file (e.g: found at `.mixxx/mixxx.cfg`)
+- When upgrading your image in future, make sure to copy this file from your previous image to save time setting up mixxx again
+- For your convience, a default `mixxx.cfg` file can be placed in the root directory (e.g: `~/mixxx.cfg`), then, you can reset the current `mixxx.cfg` back to this file by pressing the `RESET CONFIG` button in the menu bar
+
 ## Acknowledgements
 
 - Fayaaz: https://github.com/fayaaz/mixxx-pi-gen for image and base i3 config

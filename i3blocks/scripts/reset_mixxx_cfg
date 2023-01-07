@@ -1,0 +1,3 @@
+#!/bin/bash
+
+i3-nagbar -t error -m 'Reset mixxx.cfg back to default. Are you sure?' -b 'Yes!' 'sudo cp ~/mixxx.cfg .mixxx/mixxx.cfg'
